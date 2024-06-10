@@ -1,5 +1,5 @@
 # Use the Maven base image for the final stage
-FROM maven:3.9.7
+FROM docker.io/maven:3.8.5-openjdk-11-slim
 
 # Set the working directory inside the container
 #WORKDIR /app
