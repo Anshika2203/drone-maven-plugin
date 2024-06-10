@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	buildCmd := exec.Command("mvn", "clean install")
+	buildCmd := exec.Command("mvn", "clean package")
 	buildOutput, buildErr := buildCmd.CombinedOutput()
 	if buildErr != nil {
 		fmt.Println("Error running 'mvn clean install':", buildErr)
